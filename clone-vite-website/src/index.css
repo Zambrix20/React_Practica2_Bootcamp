@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #1b1b1f;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-hero {
+  .main-container {
+    padding-bottom: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1152px;
+    margin-top: 150px;
+
+    .section-main {
+      text-align: left;
+
+      h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        background-image: linear-gradient(to right, #4fbfff, #9b5ffe, #bd34fe);
+        color: transparent;
+        background-clip: text;
+        display: inline-block;
+        margin: 0;
+      }
+      .paragraph-first {
+        font-size: 4rem;
+        font-weight: 600;
+        color: #fff;
+        margin: 0;
+      }
+      .paragraph-second {
+        font-size: 29px;
+        color: rgba(255, 255, 255, 0.623);
+        margin: 0;
+        line-height: 36px;
+        padding-top: 12px;
+      }
+
+      .button-container {
+        padding-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+
+        .button-action {
+          background: #32363f;
+          border-radius: 20px;
+          padding: 0px 20px;
+          font-size: 16px;
+          line-height: 38px;
+          font-weight: 600;
+          color: rgba(255, 255, 245, 0.86);
+          cursor: pointer;
+          text-align: center;
+        }
+
+        .button--color {
+          background-color: #747bff;
+        }
+      }
+    }
+
+    .section-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-width: 256px;
+        max-height: 256px;
+      }
+    }
+  }
+}
+
+.container-features {
+  padding: 0 64px;
+
+  .main-container-feature {
+    margin: 0 auto;
+    max-width: 1152px;
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr;
+      gap: 15px;
+
+      .card-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        background-color: rgba(101, 117, 133, 0.16);
+      }
+
+      .card-item {
+        background-color: #202127;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+
+        .card-title {
+          color: #e0e0d8;
+          line-height: 24px;
+          font-size: 16px;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        .card-description {
+          color: rgba(235, 235, 245, 0.6);
+          padding-top: 8px;
+          line-height: 24px;
+          font-size: 14px;
+          font-weight: 500;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
